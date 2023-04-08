@@ -1,0 +1,16 @@
+userAgent: Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.47 Safari/537.36 CrKey/1.36.159268
+screen: 1280x720x24
+devicePixelRatio: 1
+navigator.hardwareConcurrency: 1
+navigator.deviceMemory: 0.25
+navigator.vendor: Google Inc.
+navigator.vendorSub:
+navigator.platform: Linux armv7l
+navigator.product: Gecko
+navigator.productSub: 20030107
+navigator.connection.effectiveType: 4g
+navigator.connection.downlink: 10
+navigator.connection.rtt: 0
+navigator.connection.saveData: false
+GPU Render: Vivante GC1000
+GPU Vendor: Vivante Corporation
