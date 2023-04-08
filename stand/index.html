@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chromecast feature detector</title>
+  <meta charset="utf-8" />
+  <style>
+    html, body {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background: black;
+        color: white;
+        font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+<pre id="result"></pre>
+<script>
+function getGPURender() {
+    var canvas = document.createElement('canvas');
+    var renderer = '';
+
+    try {
+        var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+
+        if (gl) {
+            var debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+            renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+            console.log(debugInfo);
+        }
+    } catch (e) {}
+
+    return renderer;
+}
+
+function getGPUVendor() {
+    var canvas = document.createElement('canvas');
+    var vendor = '';
+
+    try {
+        var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+
+        if (gl) {
+            var debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+            vendor = gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL);
+        }
+    } catch (e) {}
+
+    return vendor;
+}
+
+var result = '';
+
+[
+    ['UserAgent', navigator.userAgent],
+    ['screen', [screen.width, screen.height, screen.colorDepth].join('x')],
+    ['devicePixelRatio', window.devicePixelRatio],
+    ['navigator.hardwareConcurrency', navigator.hardwareConcurrency],
+    ['navigator.deviceMemory', navigator.deviceMemory],
+    ['navigator.vendor', navigator.vendor],
+    ['navigator.vendorSub', navigator.vendorSub],
+    ['navigator.platform', navigator.platform],
+    ['navigator.product', navigator.product],
+    ['navigator.productSub', navigator.productSub],
+    ['navigator.connection.effectiveType', navigator.connection && navigator.connection.effectiveType],
+    ['navigator.connection.downlink', navigator.connection && navigator.connection.downlink],
+    ['navigator.connection.rtt', navigator.connection && navigator.connection.rtt],
+    ['navigator.connection.saveData', navigator.connection && navigator.connection.saveData],
+    ['GPU Render', getGPURender()],
+    ['GPU Vendor', getGPUVendor()],
+].forEach(function(item) {
+    result += item[0] + ': ' + item[1] + '<br/>';
+});
+
+document.querySelector('#result').innerHTML = result;
+</script>
+</body>
+</html>
