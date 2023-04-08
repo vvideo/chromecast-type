@@ -1,5 +1,17 @@
 # chromecast-type
  Google Cast Web SDK does not allow you to determine the Chromecast version, but indirectly, this can be done.
+ 
+ ## Types
+ - Chromecast 1
+ - Chromecast 2
+ - Chromecast 3
+ - Chromecast Ultra
+ - Chromecast with Google TV 4K
+ - Chromecast with Google TV HD
+ - Android TV with chromecast
+ - Google Nest Hub
+ - Google Nest Hub Max
+
 
 ## Install
 `npm install chromecast-type`
