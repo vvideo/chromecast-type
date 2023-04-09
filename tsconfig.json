@@ -1,21 +1,23 @@
 {
-  "exclude": ["dist", "test", "manual-test"],
+  "exclude": ["dist", "test"],
   "compilerOptions": {
       "outDir": "./dist/",
       "module": "es6",
       "target": "es5",
       "declaration": true,
-      "declarationDir": ".",
+      "declarationDir": "./dist/",
       "allowJs": true,
       "esModuleInterop": true,
       "lib": [
           "es6",
           "dom"
       ],
+      "rootDir": "src",
       "moduleResolution": "node",
       "noImplicitAny": true,
       "noImplicitThis": true,
       "strictNullChecks": false,
       "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src"]
 }
