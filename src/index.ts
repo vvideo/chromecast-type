@@ -71,4 +71,6 @@ export function getChromecastType(): ChromecastType {
 
         return 'chromecast-with-google-tv-hd';
     }
+
+    return type;
 }
