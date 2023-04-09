@@ -1,4 +1,9 @@
 # chromecast-type
+[![NPM Version](https://img.shields.io/npm/v/chromecast-type.svg?style=flat)](https://www.npmjs.org/package/chromecast-type)
+[![NPM Downloads](https://img.shields.io/npm/dm/chromecast-type.svg?style=flat)](https://www.npmjs.org/package/chromecast-type)
+[![Bundlephobia](https://badgen.net/bundlephobia/minzip/chromecast-type)](https://bundlephobia.com/result?p=chromecast-type)
+[![install size](https://packagephobia.com/badge?p=chromecast-type)](https://packagephobia.com/result?p=chromecast-type)
+
  Google Cast Web SDK does not allow you to determine the Chromecast version, but indirectly, this can be done.
  
  ## Support
