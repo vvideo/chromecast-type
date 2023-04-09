@@ -9,7 +9,7 @@ export function getChromecastTypeByUserAgent(userAgent: string): ChromecastTypeB
         return 'google-nest-hub-2';
     }
 
-    if (userAgent.search('Android)') !== -1) {
+    if (userAgent.search(/Android\)/) !== -1) {
         return 'google-nest-hub-1';
     }
 
