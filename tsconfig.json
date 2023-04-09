@@ -16,7 +16,8 @@
       "moduleResolution": "node",
       "noImplicitAny": true,
       "noImplicitThis": true,
-      "strictNullChecks": false,
+      "strictNullChecks": true,
+      "strict": true,
       "forceConsistentCasingInFileNames": true
   },
   "include": ["src"]

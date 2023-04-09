@@ -1,4 +1,4 @@
-import { getChromecastTypeByUserAgent } from '../src';
+import { getChromecastType, getChromecastTypeByUserAgent } from '../src';
 import {
     chromecastAndroidTvUserAgent,
     chromecastUserAgent,
@@ -31,5 +31,9 @@ describe('Chromecast', () => {
         variants.forEach(([userAgent, expected]) => {
             expect(getChromecastTypeByUserAgent(userAgent)).toEqual(expected);
         });
+    });
+
+    it('#getChromecastType', () => {
+        expect(getChromecastType()).toEqual('');
     });
 });
