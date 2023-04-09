@@ -1,4 +1,6 @@
-export function getChromecastTypeByUserAgent(userAgent: string): string {
+export type ChromecastTypeByUserAgent = '' | 'google-nest-hub-2' | 'google-nest-hub-1' | 'chromecast-with-google-tv' | 'android-tv-with-chromecast' | 'chromecast';
+
+export function getChromecastTypeByUserAgent(userAgent: string): ChromecastTypeByUserAgent {
     if (userAgent.search('CrKey') === -1) {
         return '';
     }
@@ -26,7 +28,9 @@ export function getChromecastTypeByUserAgent(userAgent: string): string {
     return 'chromecast';
 }
 
-export function getChromecastType() {
+export type ChromecastType = ChromecastTypeByUserAgent | 'chromecast-ultra' | 'chromecast-3' | 'chromecast-2' | 'chromecast-1' | 'google-nest-hub-max-2' | 'chromecast-with-google-tv-4k' | 'chromecast-with-google-tv-hd';
+
+export function getChromecastType(): ChromecastType {
     const type = getChromecastTypeByUserAgent(navigator.userAgent);
 
     if (type === 'chromecast') {
