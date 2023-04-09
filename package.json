@@ -1,6 +1,6 @@
 {
   "name": "chromecast-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Google Cast Web SDK does not allow you to determine the Chromecast version, but indirectly, this can be done.",
   "type": "module",
   "main": "dist/index.js",
@@ -10,7 +10,8 @@
   },
   "scripts": {
     "clean": "del dist/*",
-    "test": "eslint --ext .ts . && jest .",
+    "test": "npm run typecheck && eslint --ext .ts . && jest .",
+    "typecheck": "tsc --noEmit",
     "build": "npm run clean; tsc"
   },
   "keywords": [
@@ -23,16 +24,14 @@
   "author": "Denis Seleznev",
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.3.0",
     "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
-    "del": "^7.0.0",
-    "del-cli": "^4.0.1",
-    "eslint": "^8.2.0",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.38.0",
     "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "ts-jest": "^29.1.0",
-    "tslib": "^2.3.1",
     "typescript": "^5.0.4"
   }
 }
