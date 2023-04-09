@@ -10,6 +10,7 @@
   },
   "scripts": {
     "clean": "del dist/*",
+    "prepare": "npm run build",
     "test": "npm run typecheck && eslint --ext .ts . && jest .",
     "typecheck": "tsc --noEmit",
     "build": "npm run clean; tsc"
