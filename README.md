@@ -4,6 +4,8 @@
 [![Bundlephobia](https://badgen.net/bundlephobia/minzip/chromecast-type)](https://bundlephobia.com/result?p=chromecast-type)
 [![install size](https://packagephobia.com/badge?p=chromecast-type)](https://packagephobia.com/result?p=chromecast-type)
 
+<img src="https://raw.githubusercontent.com/vvideo/chromecast-type/main/images/chromecast.jpeg" align="right" width="500" />
+
  Google Cast Web SDK does not allow you to determine the Chromecast version, but indirectly, this can be done.
  
  ## Support
