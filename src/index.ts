@@ -1,16 +1,16 @@
-export type ChromecastTypeByUserAgent = '' | 'google-nest-hub-2' | 'google-nest-hub-1' | 'chromecast-with-google-tv' | 'android-tv-with-chromecast' | 'chromecast';
+export type ChromecastTypeByUserAgent = '' |
+    'chromecast' |
+    'google-nest-hub' |
+    'chromecast-with-google-tv' |
+    'android-tv-with-chromecast';
 
 export function getChromecastTypeByUserAgent(userAgent: string): ChromecastTypeByUserAgent {
     if (userAgent.search('CrKey') === -1) {
         return '';
     }
 
-    if (userAgent.search('Fuchsia') !== -1) {
-        return 'google-nest-hub-2';
-    }
-
-    if (userAgent.search(/Android\)/) !== -1) {
-        return 'google-nest-hub-1';
+    if (userAgent.search('Fuchsia') !== -1 || userAgent.search(/Android\)/) !== -1) {
+        return 'google-nest-hub';
     }
 
     if (userAgent.search(/Android \d/) !== -1) {
@@ -28,7 +28,14 @@ export function getChromecastTypeByUserAgent(userAgent: string): ChromecastTypeB
     return 'chromecast';
 }
 
-export type ChromecastType = ChromecastTypeByUserAgent | 'chromecast-ultra' | 'chromecast-3' | 'chromecast-2' | 'chromecast-1' | 'google-nest-hub-max-2' | 'chromecast-with-google-tv-4k' | 'chromecast-with-google-tv-hd';
+export type ChromecastType = ChromecastTypeByUserAgent |
+    'chromecast-1' |
+    'chromecast-2' |
+    'chromecast-ultra' |
+    'chromecast-3' |
+    'chromecast-with-google-tv-4k' |
+    'chromecast-with-google-tv-hd' |
+    'google-nest-hub-max';
 
 export function getChromecastType(): ChromecastType {
     const type = getChromecastTypeByUserAgent(navigator.userAgent);
@@ -56,10 +63,10 @@ export function getChromecastType(): ChromecastType {
         }
     }
 
-    if (type === 'google-nest-hub-2') {
+    if (type === 'google-nest-hub') {
         // Nest Hub Max: 1280x800, Nest Hub: 1024x600
         if (screen.height === 800) {
-            return 'google-nest-hub-max-2';
+            return 'google-nest-hub-max';
         }
     }
 

@@ -1,6 +1,6 @@
 {
   "name": "chromecast-type",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Google Cast Web SDK does not allow you to determine the Chromecast version, but indirectly, this can be done.",
   "type": "module",
   "main": "dist/index.js",

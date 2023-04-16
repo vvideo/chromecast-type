@@ -20,8 +20,8 @@ describe('Chromecast', () => {
             [chromecastWithGoogleTvUserAgent, 'chromecast-with-google-tv'],
             [chromecastAndroidTvUserAgent, 'android-tv-with-chromecast'],
 
-            [fuchsiaUserAgent, 'google-nest-hub-2'],
-            [googleNestHub, 'google-nest-hub-1'],
+            [fuchsiaUserAgent, 'google-nest-hub'],
+            [googleNestHub, 'google-nest-hub'],
             [googleNestHubMax, 'chromecast'],
 
             [safariUserAgent, ''],
