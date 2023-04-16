@@ -63,6 +63,7 @@ var result = '';
     ['navigator.platform', navigator.platform],
     ['navigator.product', navigator.product],
     ['navigator.productSub', navigator.productSub],
+    ['navigator.connection.type', navigator.connection && navigator.connection.type],
     ['navigator.connection.effectiveType', navigator.connection && navigator.connection.effectiveType],
     ['navigator.connection.downlink', navigator.connection && navigator.connection.downlink],
     ['navigator.connection.rtt', navigator.connection && navigator.connection.rtt],
@@ -70,7 +71,7 @@ var result = '';
     ['GPU Render', getGPURender()],
     ['GPU Vendor', getGPUVendor()],
 ].forEach(function(item) {
-    result += item[0] + ': ' + item[1] + '<br/>';
+    result += item[0] + ': ' + item[1] + '\n';
 });
 
 document.querySelector('#result').innerHTML = result;
