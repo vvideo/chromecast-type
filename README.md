@@ -48,6 +48,7 @@ console.log(getChromecastType());
 ```
 
 ## Links
+- [Stand](https://vvideo.github.io/chromecast-type/stand/)
 - [Wiki](https://en.wikipedia.org/wiki/Chromecast)
 - [Supported Media for Google Cast
 ](https://developers.google.com/cast/docs/media#video_codecs)
