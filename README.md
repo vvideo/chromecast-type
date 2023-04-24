@@ -7,7 +7,7 @@
 <img src="https://raw.githubusercontent.com/vvideo/chromecast-type/main/images/chromecast.jpeg" align="right" width="500" />
 
  Google Cast Web SDK does not allow you to determine the Chromecast version, but indirectly, this can be done.
- 
+
  ## Support
  - Chromecast 1st generation
  - Chromecast 2nd generation
@@ -47,8 +47,12 @@ import { getChromecastType } from 'chromecast-type';
 console.log(getChromecastType());
 ```
 
+## Stand
+- [Common](https://vvideo.github.io/chromecast-type/stand/index.html)
+- [Supported codecs - canPlayType](https://vvideo.github.io/chromecast-type/stand/codecs_canPlayType.html)
+- [Supported codecs - isTypeSupported](https://vvideo.github.io/chromecast-type/stand/codecs_isTypeSupported.html)
+
 ## Links
-- [Stand](https://vvideo.github.io/chromecast-type/stand/)
 - [Wiki](https://en.wikipedia.org/wiki/Chromecast)
 - [Supported Media for Google Cast
 ](https://developers.google.com/cast/docs/media#video_codecs)
