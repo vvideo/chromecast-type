@@ -20,9 +20,9 @@
 <pre id="result"></pre>
 <script>
 var result = CheckCodecs.check(Codecs, 'canPlayType', CheckCodecs.canPlayType);
-var text = CheckCodecs.stripTags(result);
-document.querySelector('#result').innerHTML = result;
-console.log(text);
+document.querySelector('#result').innerHTML = result.html;
+console.log(result.text);
+console.log(result.json);
 </script>
 </body>
 </html>

@@ -11,6 +11,7 @@ var CheckCodecs = {
     },
     check: function(groups, title, handler) {
         var html = '<h2>' + title + '</h2>\n';
+        var codecs = {};
         groups.forEach(function(group) {
             html += '<b>' + group.header + '</b>\n';
 
@@ -20,11 +21,19 @@ var CheckCodecs = {
                     result = '""';
                 }
                 html += item.label + ', ' + '<code>' + item.mediaType + '</code>: ' + result + '\n';
+
+                codecs[item.mediaType] = result;
             });
 
             html += '\n';
         });
 
-        return html + '\n';
+        html += '\n';
+
+        return {
+            html: html,
+            text: CheckCodecs.stripTags(html),
+            json: JSON.stringify(codecs, '', 4)
+        };
     }
 };

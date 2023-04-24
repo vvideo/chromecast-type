@@ -1,0 +1,65 @@
+canPlayType
+MP4 video and audio
+H.264 level 3.0, baseline, AAC, aac_he, video/mp4; codecs="avc1.42E01E, mp4a.40.5": probably
+H.264 level 3.0, baseline, AAC, aac_lc, video/mp4; codecs="avc1.42E01E, mp4a.40.2": probably
+H.264 level 3.0, MP3, video/mp4; codecs="avc1.42E01E, mp4a.69": probably
+H.264 level 3.0, MP3, video/mp4; codecs="avc1.640028, mp4a.6B": probably
+H.264 level 3.1, baseline, AAC, aac_he, video/mp4; codecs="avc1.42E01F, mp4a.40.5": probably
+H.264 level 3.1, baseline, AAC, aac_lc, video/mp4; codecs="avc1.42E01F, mp4a.40.5": probably
+H.264 level 3.1, MP3, video/mp4; codecs="avc1.42E01F, mp4a.69": probably
+H.264 level 3.1, MP3, video/mp4; codecs="avc1.42E01F, mp4a.6B": probably
+H.264 level 3.1, main, AAC, aac_he, video/mp4; codecs="avc1.4D401F, mp4a.40.5": probably
+H.264 level 3.1, main, AAC, aac_lc, video/mp4; codecs="avc1.4D401F, mp4a.40.2": probably
+H.264 level 3.1, main, MP3, video/mp4; codecs="avc1.4D401F, mp4a.69": probably
+H.264 level 3.1, main, MP3, video/mp4; codecs="avc1.4D401F, mp4a.6B": probably
+H.264 level 4.0, main, AAC, aac_he, video/mp4; codecs="avc1.4D4028, mp4a.40.5": probably
+H.264 level 4.0, main, AAC, aac_lc, video/mp4; codecs="avc1.4D4028, mp4a.40.2": probably
+H.264 level 4.0, main, MP3, video/mp4; codecs="avc1.4D4028, mp4a.69": probably
+H.264 level 4.0, main, MP3, video/mp4; codecs="avc1.4D4028, mp4a.6B": probably
+H.264 level 4.0, high, AAC, aac_he, video/mp4; codecs="avc1.640028, mp4a.40.5": probably
+H.264 level 4.0, high, AAC, aac_lc, video/mp4; codecs="avc1.640028, mp4a.40.2": probably
+H.264 level 4.0, high, MP3, video/mp4; codecs="avc1.640028, mp4a.69": probably
+H.264 level 4.0, high, MP3, video/mp4; codecs="avc1.640028, mp4a.6B": probably
+H.264 level 4.2, high, AAC, aac_he, video/mp4; codecs="avc1.64002A, mp4a.40.5": probably
+H.264 level 4.2, high, AAC, aac_lc, video/mp4; codecs="avc1.64002A, mp4a.40.2": probably
+H.264 level 4.2, high, MP3, video/mp4; codecs="avc1.64002A, mp4a.40.69": ""
+H.264 level 4.2, high, MP3, video/mp4; codecs="avc1.64002A, mp4a.40.6B": ""
+
+MP4 video only
+Dolby Vision, 05, 06 (4K24fps), video/mp4; codecs="dvhe.05.06": ""
+Dolby Vision, 05, 07 (4K30fps), video/mp4; codecs="dvhe.05.07": ""
+Dolby Vision, 05, 09 (4K60fps), video/mp4; codecs="dvhe.05.09": ""
+Dolby Vision, 08, 06 (4K24fps, compatible with HEVC decoder), video/mp4; codecs="dvhe.08.06": ""
+Dolby Vision, 08, 07 (4K30fps, compatible with HEVC decoder), video/mp4; codecs="dvhe.08.07": ""
+Dolby Vision, 08, 09 (4K60fps, compatible with HEVC decoder), video/mp4; codecs="dvhe.08.09": ""
+H.265, main, 5.0, video/mp4; codecs="hev1.1.6.L150.B0": ""
+H.265, main, 5.1, video/mp4; codecs="hev1.1.6.L153.B0": ""
+H.265, main10, 5.0, video/mp4; codecs="hev1.2.6.L150.B0": ""
+H.265, main10, 5.1, video/mp4; codecs="hev1.2.6.L153.B0": ""
+
+MP4 non-compliant audio media types
+M4A, HE-AAC, audio/mp4; codecs="mp4a.40.05": probably
+M4A, LC-AAC, audio/mp4; codecs="mp4a.40.02": probably
+
+MP4 audio only
+M4A, AAC, aac_he, audio/mp4; codecs="mp4a.40.5": probably
+M4A, AAC, aac_lc, audio/mp4; codecs="mp4a.40.2": probably
+MP3, audio/mp3: probably
+MPA, MP3, audio/mpeg: probably
+MPA, MP3, audio/mpeg; codecs="mp3": probably
+MP4, MP3, audio/mp4; codecs="mp4a.69": probably
+MP4, MP3, audio/mp4; codecs="mp4a.6B": probably
+
+Audio passthrough
+MP4, AAC, audio/mp4; codecs="mp4a.40.2": probably
+MP4, AC-3, audio/mp4; codecs="ac-3": probably
+MP4, AC-3, audio/mp4; codecs="mp4a.a5": probably
+MP4, E-AC-3, audio/mp4; codecs="ec-3": probably
+MP4, E-AC-3, audio/mp4; codecs="mp4a.a6": probably
+MP4, MPEG-H Audio, audio/mp4; codecs="mhm1.0x0D": ""
+MP4, Dolby® Atmos™, audio/mp4; codecs="ec-3"; spatialRendering=true: probably
+
+WebM video and audio
+WebM, VP8, Vorbis, video/webm; codecs="vp8, vorbis": probably
+WebM, VP9, Vorbis, video/webm; codecs="vp9, vorbis": ""
+WebM (audio only), Vorbis, audio/webm; codecs="vorbis": probably
