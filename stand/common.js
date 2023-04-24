@@ -17,10 +17,11 @@ var CheckCodecs = {
 
             group.items.forEach(function(item) {
                 var result = handler(item.mediaType);
-                if (result === '') {
-                    result = '""';
+                var resultHtml = result;
+                if (resultHtml === '') {
+                    resultHtml = '""';
                 }
-                html += item.label + ', ' + '<code>' + item.mediaType + '</code>: ' + result + '\n';
+                html += item.label + ', ' + '<code>' + item.mediaType + '</code>: ' + resultHtml + '\n';
 
                 codecs[item.mediaType] = result;
             });
