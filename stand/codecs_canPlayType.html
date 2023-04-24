@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chromecast: codecs - canPlayType</title>
+  <meta charset="utf-8" />
+  <style>
+    html, body {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background: black;
+        color: white;
+        font-size: 20px;
+    }
+  </style>
+  <script src="./common.js"></script>
+  <script src="./codecs.js"></script>
+</head>
+<body>
+<pre id="result"></pre>
+<script>
+var result = CheckCodecs.check(Codecs, 'canPlayType', CheckCodecs.canPlayType);
+var text = CheckCodecs.stripTags(result);
+document.querySelector('#result').innerHTML = result;
+console.log(text);
+</script>
+</body>
+</html>
